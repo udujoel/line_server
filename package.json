@@ -1,0 +1,11 @@
+{
+  "name": "salsify_project",
+  "version": "1.0.0",
+  "description": "Salsify take home project that serves lines from a file on a network",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joel Udu",
+  "license": "ISC"
+}
