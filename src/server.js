@@ -44,7 +44,7 @@ app.get('/lines/:index', async (req, res) => {
     let lineNumber = 0;
     for await (const line of rl) {
         if (lineNumber === index) {
-            cache.set(index.toString(), line);  // Update the cache
+            cache.set(index.toString(), line);  // Store the line in the cache for future requests.
             res.status(200).send(line);
             return;
         }
