@@ -1,8 +1,8 @@
 # Line Server System
 
-## How does your system work? (if not addressed in comments in source)
-
 This system serves individual lines from a specified text file to clients over HTTP, using a simple REST API. Clients can request a specific line by sending an HTTP GET request to the `/lines/<line index>` endpoint.
+
+## How does your system work? (if not addressed in comments in source)
 
 - The system utilizes Express.js to create a web server that listens for incoming requests on port 3000.
 - A simple caching mechanism is implemented using the `node-cache` module to store recently accessed lines in memory.
@@ -30,7 +30,7 @@ The system will be able to handle a large number of concurrent users. The Expres
 - Express.js Documentation: [Express.js](https://expressjs.com/)
 - Node.js Documentation: [Node.js Docs](https://nodejs.org/dist/latest-v14.x/docs/api/)
 - Readline documentation: [Readline](https://docs.python.org/3/library/readline.html)
-- `node-cache` Documentation: [node-cache on npm](https://www.npmjs.com/package/node-cache)
+- `node-cache` Documentation: [node-cache on npm](https://www.npmjs.com/package/node-cache), [NodeCache Github](https://github.com/node-cache/node-cache)
 
 
 ## What third-party libraries or other tools does the system use? How did you choose each library or framework you used?
