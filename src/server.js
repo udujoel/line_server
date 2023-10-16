@@ -8,7 +8,7 @@ const express = require("express");
 const fs = require("fs");
 const readline = require("readline");
 const NodeCache = require("node-cache");
-const cache = new NodeCache({ stdTTL: 100, checkperiod: 120 });
+const cache = new NodeCache({ stdTTL: 10000, checkperiod: 120 });
 
 // initialize express
 const app = express();
