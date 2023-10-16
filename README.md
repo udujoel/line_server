@@ -31,6 +31,7 @@ The system will be able to handle a large number of concurrent users. The Expres
 - Node.js Documentation: [Node.js Docs](https://nodejs.org/dist/latest-v14.x/docs/api/)
 - Readline documentation: [Readline](https://docs.python.org/3/library/readline.html)
 - `node-cache` Documentation: [node-cache on npm](https://www.npmjs.com/package/node-cache), [NodeCache Github](https://github.com/node-cache/node-cache)
+- [Caching Nodejs app](https://blog.logrocket.com/caching-node-js-optimize-app-performance/)
 
 
 ## What third-party libraries or other tools does the system use? How did you choose each library or framework you used?
@@ -43,14 +44,15 @@ The system will be able to handle a large number of concurrent users. The Expres
 - The exercise took approximately 3 and half hours to complete.
 - With unlimited time, priority would be given to implementing random access for more efficient line retrieval, optimizing the caching mechanism, and improving error handling.
 - Further time would also be spent on load testing, performance analysis, and possibly porting the system to a more performant language or runtime.
-- I could also add support for authentication and authorization. Currently, anyone can access the server. I would like to add support for authentication and authorization so that only authorized users can access the server.
+- Security is an important factor. I could also add support for authentication and authorization. Currently, anyone can access the server. I would like to add support for authentication and authorization so that only authorized users can access the server.
+- I'd work on introducing Load Balancers, Traffic Mangers or Application Gateways to optimize traffic and routing, reducing response time. 
 
 
 ## If you were to critique your code, what would you have to say about it?
 
 
 - The current implementation reads the file sequentially which is inefficient for large files.
-- The caching mechanism is simplistic and may not handle a high volume of unique requests efficiently.
+- The caching mechanism is simplistic and may not handle a high volume of unique requests efficiently. I'll consider using an external caching system like Redis, which can handle larger datasets and provide more advanced caching strategies.
 - Error handling and logging are minimal and could be improved for a production environment.
 - The system lacks tests, which would be crucial for ensuring correctness and robustness in a real-world scenario.
 
